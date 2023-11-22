@@ -1,0 +1,25 @@
+.technology-grid-title {
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+    border: 3px solid white;
+    width: auto;
+    font-family: Roboto;
+
+}
+
+.technology-item {
+    font-family: Roboto;
+    margin: 10px 0px;
+    padding: 10px 30px;
+    color: white; // Texte en blanc
+    border: 3px solid white; // Bordure blanche
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5); // Fond noir légèrement transparent
+    display: flex;
+    align-items: center; // Centre verticalement le contenu
+    justify-content: start; // Commence le contenu à gauche
+    margin-bottom: 10px; // Ajoutez un peu d'espace entre les éléments
+}
+
+

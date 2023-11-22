@@ -1,0 +1,96 @@
+.home-container {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+.background-video {
+  position: fixed;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.home-content {
+  z-index: 1;
+  text-align: left;
+
+  .name-text, .role-text {
+    line-height: 0.88;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    font-family: 'American Captain', sans-serif;
+    font-size: 136px;
+    letter-spacing: 2px;
+    text-shadow: 0 0 5px, 0 0 10px, 0 0 15px;
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .name-text {
+    font-size: 146px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+  }
+
+  .role-text {
+    &:nth-child(2) {
+      color: #d100d1;
+      text-shadow: 0 0 1px #d100d1, 0 0 1px #d100d1, 0 0 15px #d100d1;
+    }
+    &:nth-child(3) {
+      color: #9c27b0;
+      text-shadow: 0 0 1px #9c27b0, 0 0 1px #9c27b0, 0 0 15px #9c27b0;
+    }
+    &:nth-child(4) {
+      color: white;
+      text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 15px #fff;
+    }
+  }
+
+  .animated-element {
+    animation: fadeInLeft 1s ease-in-out forwards;
+  }
+
+  .underline-image {
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+  }
+
+  .underline-image.animate {
+    animation: fadeInUp 0.5s ease-in-out forwards;
+  }
+}
+
+@keyframes fadeInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

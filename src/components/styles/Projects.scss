@@ -1,0 +1,54 @@
+.projectText {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.textContainer {
+    text-align: center; // Centre le texte horizontalement
+}
+
+.projectsHeader{
+    color: #9c27b0;
+    text-shadow: 0 0 1px #9c27b0, 0 0 1px #9c27b0, 0 0 15px #9c27b0;
+    padding: 100px;
+    text-align: center;
+}
+
+.projectTitle {
+    color: #9c27b0;
+    text-shadow: 0 0 1px #9c27b0, 0 0 1px #9c27b0, 0 0 15px #9c27b0;
+    margin-bottom: 15px; // Espacement entre le titre et la description
+}
+
+.projectDescription {
+    color: white;
+}
+
+.projectImageLeft, .projectImageRight {
+    width: 100%;
+    border: 5px solid white;
+    height: auto;
+    margin: 40px, 30px;
+    transform: perspective(1000px) rotateY(10deg);
+}
+
+.projectImageRight {
+    transform: perspective(1000px) rotateY(-10deg);
+}
+
+.unavailableButton {
+    margin-top: 20px;
+    background-color: #cccccc; // Gris
+    color: white;
+    text-shadow: none; // Aucune ombre de texte
+    border-radius: 20px; // Bordures arrondies
+    padding: 10px 20px; // Padding horizontal et vertical
+    border: none; // Pas de bordure
+    font-size: 16px; // Taille de la police
+    opacity: 1; // Opacité normale (ajustez selon vos besoins)
+
+    &:disabled {
+        color: #666666; // Couleur du texte plus foncée pour le désactivé
+    }
+}

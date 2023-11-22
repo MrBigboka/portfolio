@@ -1,0 +1,52 @@
+.contact-title {
+    padding-top: 100px;
+    color: #9c27b0;
+    text-shadow: 0 0 1px #9c27b0, 0 0 1px #9c27b0, 0 0 15px #9c27b0;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: auto;
+
+    .MuiTextField-root {
+        background-color: transparent;
+        margin: 10px 0;
+
+        .MuiOutlinedInput-root {
+            fieldset {
+                border-color: white;
+            }
+
+            &:hover fieldset {
+                border-color: white;
+            }
+
+            &.Mui-focused fieldset {
+                border-color: white;
+            }
+
+            .MuiInputBase-input {
+                color: white;
+            }
+        }
+
+        .MuiInputLabel-root {
+            color: white;
+        }
+    }
+
+    .MuiButton-root {
+        margin-top: 20px;
+        margin-bottom: 200px;
+        background-color: #9c27b0; // Couleur personnalisée du bouton
+        color: white;
+
+        &:hover {
+            background-color: darken(#9c27b0, 10%);
+        }
+    }
+}

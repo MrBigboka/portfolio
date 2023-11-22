@@ -1,0 +1,84 @@
+.about-container {
+    font-family: 'American Captain', sans-serif;
+    text-align: center;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column; // Modifier ici
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding-top: 150px;
+
+    .custom-paper {
+        width: 100%; // Utilisez 100% pour prendre toute la largeur
+        background-color: rgba(205, 200, 200, 1); // Couleur de fond avec opacité
+        padding: 20px; // Ajouter un peu de padding
+    }
+
+    .profile-image {
+      width: 70%; // Grande taille pour la photo de profil
+      height: auto;
+      border-radius: 50%; // Optionnel: arrondir les coins pour un look circulaire
+    }
+
+  .about-description {
+      width: 85%; // Largeur pour la description
+      text-align: left; // Aligner le texte à gauche
+      padding-left: 40px; // Ajouter un peu de padding à gauche
+
+      // Ajout du style de bordure
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid white; // Bordure blanche
+      border-radius: 10px; // Coins arrondis
+      background-color: rgba(255, 255, 255, 0.05); // Fond légèrement transparent
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); // Ombre portée pour un effet de profondeur
+
+      // Effet de transition pour l'ombre portée au survol
+      transition: box-shadow 0.3s ease-in-out;
+
+      &:hover {
+          box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.3); // Ombre plus prononcée au survol
+      }
+  }
+
+  .about-header {
+    color: #9c27b0;
+    text-shadow: 0 0 1px #9c27b0, 0 0 1px #9c27b0, 0 0 15px #9c27b0;
+    text-transform: uppercase;
+  }
+}
+
+.technology-grids-container {
+  margin-top: 100px;
+  color: white;
+  text-shadow: 0 0 1px #fff, 0 0 1px #fff, 0 0 15px #fff;
+}
+
+.distinctions-section {
+    text-align: center;
+    margin-top: 80px;
+
+    .distinctions-title {
+        color: #9c27b0;
+        text-shadow: 0 0 1px #9c27b0, 0 0 1px #9c27b0, 0 0 15px #9c27b0;
+        font-size: 50px;
+    }
+
+    .distinction-item {
+        // Styles pour l'élément de distinction, si nécessaire
+    }
+
+    .distinction-image {
+        max-width: 100%;
+        width: 50pc;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .distinction-description {
+        margin: 10px;
+        font-size: 18px;
+        color: #ffffff;
+    }
+}

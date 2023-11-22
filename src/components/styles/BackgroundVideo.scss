@@ -1,0 +1,22 @@
+.video-background-container {
+  position: relative;
+  overflow: hidden;
+  height: 100vh; // Ajustez selon vos besoins
+
+  .video-background {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+  }
+
+  .video-content {
+    position: relative;
+    z-index: 1;
+    // Votre style pour le contenu ici
+  }
+}
