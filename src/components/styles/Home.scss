@@ -22,12 +22,34 @@
   z-index: 1;
   text-align: left;
 
+  @media (max-width: 768px) {
+    .name-text, .role-text {
+      font-size: 90px; // Taille ajustée pour tablettes
+      line-height: 1.1;
+    }
+    .underline-image {
+      width: 300px; // Taille ajustée pour tablettes
+    }
+  }
+
+  @media (max-width: 480px) {
+    .name-text, .role-text {
+      font-size: 50px; // Taille ajustée pour mobiles
+      line-height: 1.1;
+    }
+    .underline-image {
+      width: 200px; // Taille ajustée pour mobiles
+    }
+  }
+
+  
+
   .name-text, .role-text {
     line-height: 0.88;
     margin-top: 1px;
     margin-bottom: 1px;
     font-family: 'American Captain', sans-serif;
-    font-size: 136px;
+    font-size: 156px;
     letter-spacing: 2px;
     text-shadow: 0 0 5px, 0 0 10px, 0 0 15px;
     opacity: 0;
@@ -36,7 +58,7 @@
   }
 
   .name-text {
-    font-size: 146px;
+    font-size: 176px;
     margin-top: 5px;
     margin-bottom: 5px;
     color: transparent;
