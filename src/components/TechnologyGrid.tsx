@@ -14,6 +14,7 @@ const TechnologyGrids: React.FC = () => {
         { name: "Cypress", image: "./images/cypress.png" },
         { name: "AWS", image: "./images/aws.png" },
         { name: "Socket.io", image: "./images/socketio.png" },
+        { name: "Kotlin", image: "./images/kotlin.png" },
         { name: "DevOps", image: "./images/devops.png" },
         { name: "Firebase", image: "./images/firebase.png" },
         { name: "SASS", image: "./images/sass.png" },
