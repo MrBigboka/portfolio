@@ -95,11 +95,12 @@ const About: React.FC<AboutProps> = ({ onInView }) => {
                             reconverti en Développeur Analyste (Full-Stack). Je
                             suis Diplômé d'un DEC en informatique du Collège de
                             Maisonneuve, spécialisé en développement
-                            d'applications web et mobile, j'applique la passion
-                            et la rigueur acquises sur les terrains au monde de
-                            la technologie. Mon but est de créer des solutions
-                            numériques innovatrices et fonctionnelles, alliant
-                            esthétique et performance. 🚀🌐
+                            d'applications web et mobile, j'applique la passion,
+                            la rigueur et l'esprit d'équipe acquises sur les
+                            terrains au monde de la technologie. Mon but est de
+                            créer des solutions numériques innovatrices et
+                            fonctionnelles, alliant esthétique et performance.
+                            🚀🌐
                         </Typography>
                     </Grid>
                 </Grid>
